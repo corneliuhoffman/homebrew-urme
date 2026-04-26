@@ -1,6 +1,6 @@
 # homebrew-urme
 
-Homebrew tap for [`urme`](https://github.com/corneliuhoffman/experience-agent) — an OCaml CLI orchestration layer for Claude + GitHub.
+Homebrew tap for [`urme`](https://github.com/corneliuhoffman/urme) — an OCaml CLI orchestration layer for Claude + GitHub.
 
 ## Install
 
@@ -11,7 +11,7 @@ brew install urme
 
 ## Cutting a release
 
-1. In the [`experience-agent`](https://github.com/corneliuhoffman/experience-agent) repo, bump `version` in `urme.opam` and `Formula/urme.rb` (here), commit, then tag:
+1. In the [`urme`](https://github.com/corneliuhoffman/urme) repo, bump `version` in `urme.opam` and `Formula/urme.rb` (here), commit, then tag:
    ```sh
    git tag vX.Y.Z
    git push --tags
