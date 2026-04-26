@@ -10,5 +10,12 @@ jobs:
     runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
-      - run: brew style ./Formula/urme.rb
-      - run: brew audit --strict --online ./Formula/urme.rb
+        with:
+          path: homebrew-urme
+      - name: Link checkout as a tap
+        run: |
+          tap_dir="$(brew --repository)/Library/Taps/corneliuhoffman"
+          mkdir -p "$tap_dir"
+          ln -s "$GITHUB_WORKSPACE/homebrew-urme" "$tap_dir/homebrew-urme"
+      - run: brew style corneliuhoffman/urme
+      - run: brew audit --strict --online --tap corneliuhoffman/urme
