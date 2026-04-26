@@ -1,0 +1,14 @@
+name: brew test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew style ./Formula/urme.rb
+      - run: brew audit --strict --online ./Formula/urme.rb
