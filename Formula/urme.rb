@@ -9,15 +9,15 @@ class Urme < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/corneliuhoffman/urme/releases/download/v0.1.1/urme-0.1.1-arm64-darwin.tar.gz"
-      sha256 "7aee7a40e749a45230c345e77803d773c73217ad6cca87833695510363b307e1"
+      url "https://github.com/corneliuhoffman/urme/releases/download/v0.1.2/urme-0.1.2-arm64-darwin.tar.gz"
+      sha256 "045afc46084e5106af1ed0716566930ebbf83dd3013a4697625c192fe93e143f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/corneliuhoffman/urme/releases/download/v0.1.1/urme-0.1.1-x86_64-linux.tar.gz"
-      sha256 "1443055b53e005ee3089c69dcd76f74a6418cdcc3c3f3d45d5471144f145250c"
+      url "https://github.com/corneliuhoffman/urme/releases/download/v0.1.2/urme-0.1.2-x86_64-linux.tar.gz"
+      sha256 "b94acdb88f124c2456185ac19a6a3304eecba4ffdc9e3071d23d1416002367f2"
     end
   end
 
